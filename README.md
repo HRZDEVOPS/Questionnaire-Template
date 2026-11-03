@@ -1,4 +1,13 @@
-# SmartRecruiters Recruiting Priorities Finder
+# HRIZONS Questionnaires
+
+Interactive surveys for HRIZONS campaigns.
+
+| Survey | Where |
+| --- | --- |
+| SmartRecruiters Recruiting Priorities Finder | Repo root (below) |
+| JDMS Utilities Job Description Quick Quiz | [`jdms-utilities-quiz/`](jdms-utilities-quiz/) |
+
+## SmartRecruiters Recruiting Priorities Finder
 
 A three-question questionnaire that gives prospects an immediate, personalized
 answer about which SmartRecruiters capabilities address their recruiting
@@ -10,7 +19,7 @@ challenges, responses, statistics, and feature comparisons come from the HRIZONS
 Solution Guide *Building the Business Case for SmartRecruiters*
 (`SmartRecruiters__Exec_Summary_w_Matrix_260814.pdf`).
 
-## How it works
+### How it works
 
 1. **What is your role?** HR/People Leader, Talent Acquisition, Hiring Manager, HR
    Technology/HRIS/IT, HR Operations/Change Management, Executive Sponsor, Other.
@@ -27,7 +36,7 @@ priority, guidance for each chosen challenge, four SmartRecruiters capabilities
 (each with the guide's SAP SuccessFactors Recruiting comparison where one
 exists), and calls to action for the executive guide and a readiness assessment.
 
-## Files
+### Files
 
 - `index.html` — standalone version. Open it in a browser to preview. To embed
   it on any page (for example a WordPress Custom HTML block), copy everything
@@ -43,7 +52,7 @@ exists), and calls to action for the executive guide and a readiness assessment.
   - `recruiting-finder.css` — styles
   - `recruiting-finder.js` — questions, copy, and logic
 
-## Editing content
+### Editing content
 
 All copy lives in the data objects at the top of the script (`roles`,
 `features`, `goals`, `challenges`). Button labels for the three questions live in
@@ -51,7 +60,7 @@ the HTML. Each answer button's `data-sr-answer` code (for example `goal:C`) must
 match a key in the script. When you change content, update both `index.html` and
 `microsite/recruiting-finder.js` so the two versions stay in sync.
 
-## Analytics
+### Analytics
 
 On completion the finder reports `sr_finder_completed` with `sr_role`,
 `sr_goal`, `sr_challenge` (comma-separated when several are chosen, e.g. `A,D`), and `sr_result`. Only answer codes are sent, never
